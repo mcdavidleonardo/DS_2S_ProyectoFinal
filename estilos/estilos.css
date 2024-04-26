@@ -21,7 +21,7 @@ header{
 	width: 100%;
 }
 header .cabecera-superior {
-	background: #1c3961;
+	background: rgb(41, 39, 39);
 }
 header .cabecera-superior a {
 	text-decoration: none;
@@ -110,7 +110,7 @@ header .cabecera-principal .contenedor .panel-menu .menu .menu-opciones li {
 }
 .banner img {
 	width: 100%;
-	opacity: .7;
+	opacity: .8;
 }
 .banner .contenedor {
 	position: absolute;
@@ -131,4 +131,96 @@ header .cabecera-principal .contenedor .panel-menu .menu .menu-opciones li {
 	font-weight: normal;
 	font-size: 30px;
 	color: #fff;
+}
+/* Galería */
+.galeria-titulo .contenedor{
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.galeria-titulo .contenedor h2{
+	font-size: 30px;
+}
+.galeria-imagenes {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(200px, 1fr));
+	grid-gap: 0;
+	width: 100%;
+	box-sizing: border-box;
+	box-sizing: content-box;
+	overflow: hidden;
+}
+.galeria-imagen {
+	height: 200px;
+	width: 341px;
+	box-sizing: content-box;
+	overflow: hidden;
+}
+.galeria-imagen img {
+    -webkit-filter: brightness(100%);
+	width: 100%;
+}
+.galeria-imagen img:hover {
+    -webkit-filter: brightness(40%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+/* Footer */
+footer{
+	background: black;
+}
+footer .footer-enlaces .contenedor {
+	display: flex;
+	flex: 1;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+footer .footer-enlaces .footer-linea {
+	background-color: #ccc;
+	border: 1px solid #fff;
+	height: 1px;
+	width: 38%;
+	margin-bottom: 30px;
+	box-sizing: content-box;
+	overflow: visible;
+}
+footer .footer-enlaces .lista-social {
+	width: 23%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+    list-style-type: disc;
+    margin-block-start: 0px;
+    margin-block-end: 1px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+footer .footer-enlaces .lista-social li:first-child {
+	margin-left: 20px;
+}
+footer .footer-enlaces .lista-social li {
+	display: inline-block;
+	margin-right: 20px;
+}
+footer .footer-enlaces .lista-social i{
+	color: #fff;
+}
+footer .footer-copyright .contenedor {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+footer .footer-copyright .contenedor p {
+	color: #fff;
+}
+footer .footer-copyright .contenedor p span {
+	padding-right: 10px;
+	padding-left: 10px;
 }
